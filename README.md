@@ -29,12 +29,12 @@ $ joe pwnedConf.php
     die ('No direct access!');
   }
   $pwnedWithApiKey = True;      // global Apikey allowed
-  $pwnedAllowGET = False;		// $_GET and/or $_POST. $_POST is prefered, since there is no serverlog of password hash.    
-  $pwnedAuthUser = 'default';	// default User for global access
+  $pwnedAllowGET = False;		    // $_GET and/or $_POST. $_POST is prefered, since there is no serverlog of password hash.    
+  $pwnedAuthUser = 'default';	  // default User for global access
   $pwnedAuthApikey ='default';	// default Apikey for global access
-  $pwnedDB = 'pwned.db3'; 		// used to store pwned-passwords, please use random filename
+  $pwnedDB = 'pwned.db3'; 		  // used to store pwned-passwords, please use random filename
   $pwnedTrackPasswords = False;	// store user password hash SHA1 in secretDatabaseCustomPassword.db
-  $pwnedPasswordDB = '';		// use random filename for secretDatabaseCustomPassword.db
+  $pwnedPasswordDB = '';		    // use random filename for secretDatabaseCustomPassword.db
 ?>
 
 Now you can adapt pwnedUserAuth.php for custom user access.
